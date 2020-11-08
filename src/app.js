@@ -1,11 +1,11 @@
 import adjuntarManejador from "./adjuntarManejador";
-import pintarEmpleados from "./pintarEmpleados";
+import cargarTareas from "./cargarTareas";
 
 /**
- * Pintar listado de empleados modificando empleadosContenedor.innerHTML
- * @param {import('./empleados').EmpleadosArray} empleados
+ * Iniciar app
  */
-export default function iniciarApp(empleados) {
-  adjuntarManejador(empleados);
-  pintarEmpleados(empleados);
+export default function iniciarApp() {
+  adjuntarManejador();
+  const tareas = cargarTareas();
+  pintarTareas(tareas);
 }

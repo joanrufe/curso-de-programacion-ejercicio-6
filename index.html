@@ -6,13 +6,13 @@
   </head>
   <body>
     <div id="app"></div>
-    <h2>Ejercicio: buscador de empleados 🔎</h2>
+    <h2>Ejercicio: Listado de tareas (TODO app) 📝</h2>
     <p>
-      Debes completar la implementación de las funciones adjuntarManejador(),
-      pintarEmpleados() y filtrarEmpleados() localizadas en sus respectivos
+      Debes completar la implementación de las funciones cargarTareas(),
+      pintarTareas() y guardarTareas() localizadas en sus respectivos
       archivos
-      <b>pintarEmpleados.js</b>, <b>filtrarEmpleados.js</b> y
-      <b>adjuntarManejador.js</b>. Muestro a continuación el diagrama de
+      <b>cargarTareas.js</b>, <b>pintarTareas.js</b> y
+      <b>guardarTareas.js</b>. Muestro a continuación el diagrama de
       funcionamiento:
       <img
         style="max-width: 450px;"
@@ -20,10 +20,11 @@
       />
     </p>
     <p>A continuación el HTML de la aplicación a implementar</p>
-    <div class="filter-employees">
-      <input placeholder="Buscar empleados/as..." name="keyword" />
-      <div class="filter-employees__results"></div>
-    </div>
+    <form id="tareas-form">
+      <input placeholder="Escribe algo que hacer" name="newTODO" />
+      <button type="submit">Añadir tarea</button>
+      <div class="listado"></div>
+    </form>
     <script src="src/index.js"></script>
   </body>
 </html>

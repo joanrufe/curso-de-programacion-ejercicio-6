@@ -1,10 +1,18 @@
-import filtrarEmpleados from "./filtrarEmpleados";
+import pintarTareas from './pintarTareas';
+import cargarTareas from './cargarTareas';
+import guardarTareas from './guardarTareas';
 
 /**
- * Adjuntar un manejador en empleadosInput que llame a filtrarEmpleados y a pintarEmpleados
- * @param {import('./empleados').EmpleadosArray} empleados
+ * Adjuntar un manejador/es
  */
-export default function adjuntarManejador(empleados) {
-  const empleadosInput = document.querySelector(".filter-employees input");
-  // Debe subscribirse al evento "input" de empleadosInput
+export default function adjuntarManejadores() {
+  const empleadosForm = document.querySelector("#todo-form");
+  /**
+   * Subscribirse al evento de tipo "submit"
+   */
+  
+  /**
+   * Usar "bubling" para atrapar los eventos "click" en el boton de borrado
+   */
+
 }
