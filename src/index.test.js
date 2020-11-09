@@ -1,5 +1,4 @@
-import { fireEvent, getAllByText, getByPlaceholderText, getByText } from "@testing-library/dom";
-import { document } from "window-or-global";
+import { getByPlaceholderText, getByText } from "@testing-library/dom";
 import app from "./app";
 
 function mockApp() {
@@ -9,8 +8,8 @@ function mockApp() {
     <div class="listado"></div>
   </form>`;
   app();
-  const todoInput = getByPlaceholderText('Escribe algo que hacer');
-  const submitButton = getByText('Añadir tarea');
+  const todoInput = getByPlaceholderText(document,'Escribe algo que hacer');
+  const submitButton = getByText(document,'Añadir tarea');
   const listadoTareas = document.querySelector('.listado')
   return {
     todoInput,

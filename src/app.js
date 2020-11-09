@@ -1,5 +1,6 @@
 import adjuntarManejador from "./adjuntarManejador";
 import cargarTareas from "./cargarTareas";
+import pintarTareas from "./pintarTareas";
 
 /**
  * Iniciar app
