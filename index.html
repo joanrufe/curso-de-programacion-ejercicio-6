@@ -19,7 +19,20 @@
         src="src/images/diagrama-funcionamiento.png"
       />
     </p>
-    <p>A continuación el HTML de la aplicación a implementar</p>
+    <p>
+      Para que los tests funcionen debes usar objetos como los siguientes para representar una tarea:
+      <pre>
+  {
+    text: 'Hacer cosas',
+    done: false
+  }</pre></p>
+  <p>
+    Cada todo debe tener un html similar al siguiente:
+    <pre>
+  &lt;input type=&quot;checkbox&quot; id=&quot;cbox2&quot;&gt; &lt;label for=&quot;cbox2&quot;&gt;Hacer cosas&lt;/label&gt;&lt;button&gt;Borrar&lt;/button&gt;
+    </pre>
+  </p>
+    <p>A continuación el HTML para implementar la aplicacion</p>
     <form id="tareas-form">
       <input placeholder="Escribe algo que hacer" name="newTODO" />
       <button type="submit">Añadir tarea</button>
